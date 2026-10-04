@@ -1,0 +1,10 @@
+import random
+import string
+
+# Định nghĩa các ký tự có thể sử dụng
+characters = string.ascii_letters + string.digits + string.punctuation
+
+# Tạo mật khẩu ngẫu nhiên dài 12 ký tự
+password = ''.join(random.choice(characters) for _ in range(12))
+
+print(f"Mật khẩu ngẫu nhiên: {password}")
